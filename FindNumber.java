@@ -17,9 +17,6 @@ public class FindNumber {
         break;
       }
     }
-    if (check) {
-      return 1;
-    }
-    return 0;
+    return check ? 1 : 0;
   }
 }
