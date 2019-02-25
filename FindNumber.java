@@ -7,16 +7,16 @@ public class FindNumber {
   private static int NUM_K = 7; // Задаем число K.
 
   private static int findNum (int k) {
-    int check = 0;
+    boolean check = false;
     int b;
 
     for (int n = 1; n < k; n++) {
       b = n * (n - 1) / 2 + 1;
       if (k == b) {
-        check = 1;
+        check = true;
       }
     }
-    if (check == 1) {
+    if (check) {
       return 1;
     }
     return 0;
