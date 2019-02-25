@@ -1,8 +1,10 @@
 public class FindNumber {
 
   public static void main(String[] args) {
-    System.out.println(findNum(7));
+    System.out.println(findNum(NUM_K));
   }
+
+  private static int NUM_K = 7; // Задаем число K.
 
   private static int findNum (int k) {
     int check = 0;
