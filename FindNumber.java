@@ -8,13 +8,15 @@ public class FindNumber {
 
   private static int findNum (int k) {
     boolean check = false;
-    int b;
+    int b = 0;
+    int n = 1;
 
-    for (int n = 1; n < k; n++) {
+    while (b < k) {
       b = n * (n - 1) / 2 + 1;
-      if (k == b) {
+      System.out.println("b = " + b + " and n = " + n);
+      n += 1;
+      if (b == k) {
         check = true;
-        break;
       }
     }
     return check ? 1 : 0;
