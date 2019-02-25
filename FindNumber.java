@@ -4,7 +4,7 @@ public class FindNumber {
     System.out.println(findNum(NUM_K));
   }
 
-  private static int NUM_K = 121; // Задаем число K.
+  private static int NUM_K = 5152; // Задаем число K.
 
   private static int findNum (int k) {
     boolean check = false;
@@ -13,7 +13,6 @@ public class FindNumber {
 
     while (b < k) {
       b = n * (n - 1) / 2 + 1;
-      System.out.println("b = " + b + " and n = " + n);
       n += 1;
       if (b == k) {
         check = true;
